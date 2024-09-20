@@ -37,6 +37,17 @@
             return newArr;
         }
 
+        function removeDuplicateWords(arr){
+            const uniqueArray = [];
+            for(const word of arr){
+                if(!uniqueArray.includes(word)){
+                 uniqueArray.push(word);
+                }
+            }
+            return uniqueArray;
+        }
+
+
 
 
         document.getElementById('btn').addEventListener("click", (e) => {
@@ -48,12 +59,14 @@
 
             if (letter !== "" && length === ""){
                 const arrayResult = findWordByLettersAndBackWordOfArray(words,letter);
-                output.innerText = arrayResult.join(", ")
+                const uniqueArrayResult = removeDuplicateWords(arrayResult);
+                output.innerText = uniqueArrayResult.join(", ")
                 document.getElementById('output_container').classList.remove("hidden");
             }else{
                 const arrayOfResult = findWordByLettersAndBackWordOfArray(words,letter);
                 const findWantedWords = wantedWords(arrayOfResult,number);
-                output.innerText = findWantedWords;
+                const uniqueArrayOfResult2 = removeDuplicateWords(findWantedWords);
+                output.innerText = uniqueArrayOfResult2.join(", ");
                 document.getElementById('output_container').classList.remove("hidden");
             }
             document.getElementById('letter').value = "";
