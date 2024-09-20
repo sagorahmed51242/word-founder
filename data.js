@@ -2090,6 +2090,8 @@
             "Simpson",
             "Simson",
             "Singleton",
+            "Wife","Daughter","sister", "Brother", "father", "Mother", "Parents", "Siblings","Husband", "Grand", "Grandfather", "Grandmother",
+            "GrandFather", "GrandMother","Step","Head","Relatives","Uncle", "Aunt",
             "Skinner",
             "Slaughter",
             "Smiley",

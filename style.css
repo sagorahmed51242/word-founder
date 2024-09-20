@@ -8,6 +8,11 @@ body{
 background: linear-gradient(90deg, rgb(199, 100, 235) 0%, hsla(232, 90%, 59%, 1) 100%);
 }
 
+.find_btn{
+    background: linear-gradient(90deg, rgb(199, 100, 235) 0%, hsla(232, 90%, 59%, 1) 100%);
+    color:white;
+    font-size: 20px;
+}
 
 .header_text{
 color:white;
